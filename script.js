@@ -22,6 +22,7 @@
         // minutes and second couner
         function cleanlink(link){
             return link.replace("https://cdn.pixabay.com/download/audio/2022/05/27/audio_5b08ce8e20.mp3?filename=", "") 
+        }
 
         function convertMinutesSeconds(totalSeconds) {
             if (totalSeconds < 0) return;
