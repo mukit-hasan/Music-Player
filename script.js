@@ -6,7 +6,7 @@
             'https://cdn.pixabay.com/download/audio/2022/02/07/audio_f972decc9f.mp3?filename=vlog-groovy-hip-hop-18304.mp3',
             'https://cdn.pixabay.com/download/audio/2021/09/13/audio_a1c2cf4513.mp3?filename=energetic-hip-hop-8303.mp3'
         );
-
+       
 
         const plist = document.getElementById('music-list');
         const audio = document.getElementById('audio')
@@ -20,7 +20,8 @@
         const tTime = document.getElementById('total-time')
         
         // minutes and second couner
-
+        function cleanlink(link){
+            return link.replace("https://cdn.pixabay.com/download/audio/2022/05/27/audio_5b08ce8e20.mp3?filename=", "") 
 
         function convertMinutesSeconds(totalSeconds) {
             if (totalSeconds < 0) return;
@@ -55,7 +56,7 @@
         console.log('ck')
         function loadsong(song) {
             audio.src = `${song}`
-    
+            title.innerText = cleanlink(song)
         }
         audio.play()
         console.log(audio)
@@ -88,12 +89,12 @@
 
             if (isplaying) {
                 audio.pause()
-                title.innerText = `Currently there is nothing playing..`
-
+                title.innerText = 'there is nothing playing'
+     
                 isplaying = false
             } else {
                 audio.play()
-                title.innerText = `Currently there is something playing..`
+                
                 isplaying = true
             }
         })
