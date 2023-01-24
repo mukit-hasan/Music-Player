@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: #1e2728ff;
+}
+#music-list{
+    margin-top: 5px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    background-color:#2c3b57ff;
+    border-radius: 10px;
+    padding: 3px;
+    color:white;
+}
+
+#music-list li{
+    list-style: none;
+    border: 1px solid white;
+    color:white;
+    font-weight: 600;
+    padding-left:15px;
+    padding: 5px;
+}
+
+.player-container{
+    padding-top: 5px;
+    padding: 2px;
+    flex-direction: column;
+    margin-top: 25%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    border-radius: 20px;
+}
+
+.player-btn{
+}
+.player-btn button{
+    background:none;
+    border:none;
+    font-size: 30px;
+    color: #2a93abff;
+    padding-left:10px;
+    padding-right: 10px;
+    border-radius: 5px;
+}
+.player-btn button:active{
+    color: #387481ff;
+}
