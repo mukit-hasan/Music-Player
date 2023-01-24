@@ -20,10 +20,7 @@
         const tTime = document.getElementById('total-time')
         
         // minutes and second couner
-        function cleanlink(link){
-            return link.replace("https://cdn.pixabay.com/download/audio/2022/05/27/audio_5b08ce8e20.mp3?filename=", "") 
-        }
-
+  
         function convertMinutesSeconds(totalSeconds) {
             if (totalSeconds < 0) return;
             let minutes = Math.floor(totalSeconds / 60);
@@ -57,7 +54,7 @@
         console.log('ck')
         function loadsong(song) {
             audio.src = `${song}`
-            title.innerText = cleanlink(song)
+            
         }
         audio.play()
         console.log(audio)
